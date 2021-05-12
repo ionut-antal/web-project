@@ -1,0 +1,776 @@
+/* start NAVBAR CSS */
+
+.headA {
+  background: linear-gradient(
+    to right,
+    #8a06f6,
+    #ee06f6,
+    #f606ce,
+    #8a06f6,
+    #ee06f6
+  );
+  color: white;
+  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.setNavDisplay {
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-right: 2rem;
+  transition: color 0.3s;
+}
+
+.links:hover {
+  color: rgba(5, 5, 5, 0.952);
+}
+
+.burger {
+  display: flex;
+  align-items: center;
+}
+
+.fa-bars {
+  margin-right: 5px;
+  display: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.headerRightSide {
+  font-size: 1.7rem;
+  font-weight: 600;
+  border: 2px solid white;
+  padding: 7px;
+  border-radius: 3rem;
+  background-color: #f6067d;
+  transition: all 0.3s;
+}
+
+.headerRightSide:hover {
+  background-color: black;
+  border: 2px solid #f6067d;
+}
+
+@media (max-width: 991px) {
+  .fa-bars {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background-color: whitesmoke;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transform: translate(100%);
+  }
+
+  .links {
+    color: black;
+    padding: 8px 15px;
+    margin-right: unset;
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 0px 1px 0px;
+    width: 100%;
+  }
+
+  .links:hover {
+    color: rgba(80, 79, 79, 0.952);
+  }
+
+  .links:last-child {
+    border: unset;
+  }
+}
+
+.nav-active {
+  transform: translate(0);
+}
+
+/* Section 1 CSS*/
+
+.sectionOne.posRel {
+  overflow: hidden;
+  position: relative;
+  height: 74rem;
+}
+
+.topImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.topImage img {
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  object-fit: cover;
+}
+
+.caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.caption p {
+  padding-top: 5rem;
+  padding-bottom: 11rem;
+}
+
+.centerButton a {
+  display: inline-block;
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding: 1.5rem 4rem;
+  border: 1px solid white;
+  background-color: #f6067d;
+  transition: all 0.3s;
+}
+
+.centerButton a:hover {
+  background-color: black;
+  border: 1px solid #f6067d;
+  transform: scale(1.1);
+}
+
+.headerB {
+  background-color: #f6067d;
+  height: 11rem;
+  padding-left: 15px;
+  padding-right: 15px;
+  clip-path: polygon(
+    50% 0%,
+    84% 0,
+    100% 0,
+    100% 80%,
+    51% 80%,
+    50% 100%,
+    49% 80%,
+    0 80%,
+    0 0,
+    19% 0
+  );
+}
+
+.headerB h2 {
+  color: white;
+  text-align: center;
+  padding-top: 2.3rem;
+}
+
+@media (max-width: 394px) {
+  .headerB h2 {
+    padding-top: 4px;
+  }
+}
+
+/* Section 2 CSS */
+
+.backgroundsCSS {
+  background-color: white;
+  padding-top: 6rem;
+}
+
+.sectionTwo .cards {
+  text-align: center;
+  min-height: 29rem;
+  padding: 6rem 1.5rem 0;
+  margin: 1rem 0;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15), 0 5px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  color: rgba(80, 79, 79, 0.952);
+  transition: all 0.3s;
+}
+
+.sectionTwo .cards:hover {
+  background-color: black;
+  color: white;
+}
+
+.sectionTwo .cards img {
+  max-width: 6rem;
+  min-width: 6rem;
+}
+
+.sectionTwo .cards h4 {
+  padding-bottom: 2rem;
+}
+
+/* Section 3 CSS */
+
+.generalCardsCSS .firstPara {
+  text-align: center;
+  font-weight: 600;
+  padding: 2.5rem 0;
+  color: #f6067d;
+}
+
+.generalCardsCSS .secondPara {
+  max-width: 80rem;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 600;
+  padding: 2.5rem 0 5.5rem;
+  color: rgba(80, 79, 79, 0.952);
+}
+
+.generalCardsCSS h2 {
+  text-align: center;
+}
+
+.cardsAll {
+  text-align: center;
+  border: 2px solid #f6067d;
+  min-height: 42rem;
+  margin: 1rem 0;
+  box-shadow: none;
+  transition: all 0.3s;
+}
+
+.cardsAll:hover {
+  box-shadow: 0 5px 10px #f6067d;
+}
+
+.cardsAll p:first-child {
+  background-color: white;
+  transition: all 0.3s;
+}
+
+.cardsAll p:first-child:hover {
+  background-color: black;
+}
+
+.cardsAll img {
+  max-width: 15rem;
+  padding: 0 2rem 2.2rem;
+}
+
+.cardsAll h3 {
+  font-size: 2.8rem;
+}
+
+.cardsAll > p {
+  color: rgba(80, 79, 79, 0.952);
+  padding: 2.2rem 2rem 0;
+}
+
+/* Section 4 CSS */
+
+.sectionFour .hoverImages p {
+  background-color: black;
+}
+
+.sectionFour .hoverImages p img {
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.sectionFour .hoverImages p img:hover {
+  opacity: 0.9;
+}
+
+a.worksButton {
+  text-align: center;
+  display: block;
+  font-size: 1.7rem;
+  padding: 1.4rem 0;
+  border: 1px solid #f6067d;
+  width: 20rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+  background-color: black;
+  color: white;
+  transition: all 0.3s;
+}
+
+a.worksButton:hover {
+  background-color: #f6067d;
+}
+
+.headerC {
+  color: white;
+  height: 50rem;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-image: linear-gradient(180deg, #f6067d 0%, #000000 100%);
+}
+
+.headerC h1 {
+  text-align: center;
+  padding: 8rem 0 7rem;
+  max-width: 165rem;
+  margin: 0 auto;
+}
+
+.headerC p {
+  padding-bottom: 3rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.headerC a.contact {
+  text-align: center;
+  display: block;
+  border: 2px solid white;
+  padding: 1rem 0;
+  width: 18rem;
+  margin: 0 auto;
+  font-size: 1.7rem;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.headerC a.contact:hover {
+  background-color: white;
+  color: hsl(330, 95%, 49%);
+}
+
+@media (max-width: 436px) {
+  .headerC {
+    height: 60rem;
+  }
+}
+
+@media (max-width: 313px) {
+  .headerC {
+    height: 70rem;
+  }
+}
+
+/* Section 5 CSS */
+
+.sectionFive .contHeight {
+  background-color: #e5e8ef;
+  height: 45rem;
+}
+
+.contHeight h3 {
+  padding-top: 6rem;
+  padding-bottom: 7rem;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.sArrow {
+  position: absolute;
+  top: 12%;
+  width: unset;
+  opacity: 1;
+}
+
+/* color: hsl(330, 95%, 49%); */
+
+.arrowLeft {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='hsl(330, 95%, 49%)' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e");
+}
+
+.arrowRight {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='hsl(330, 95%, 49%)' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
+}
+
+.sectionFive p {
+  text-align: center;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  font-weight: 500;
+}
+
+.sectionFive .contHeights {
+  height: 28rem;
+}
+
+.contHeights p:last-child {
+  padding-top: 5rem;
+  color: #f6067d;
+}
+
+@media (max-width: 433px) {
+  .sectionFive .contHeight {
+    height: 57rem;
+  }
+  .sectionFive .contHeights {
+    height: 40rem;
+  }
+}
+
+@media (max-width: 315px) {
+  .sectionFive .contHeight {
+    height: 70rem;
+  }
+  .sectionFive .contHeights {
+    height: 53rem;
+  }
+}
+
+/* Section 6 CSS */
+/**/
+/* Section 7 CSS */
+
+.sectionSeven .equal {
+  background-color: black;
+  height: 40rem;
+  width: 100%;
+}
+
+.equal.image img {
+  height: 100%;
+  width: 100%;
+}
+
+.equal p:first-child {
+  text-align: center;
+  padding: 9rem 3rem 5rem;
+  color: #f6067d;
+}
+
+.equal p:last-child {
+  text-align: center;
+  padding: 0 3rem;
+  color: white;
+  font-weight: 500;
+}
+
+.removePaddR {
+  padding-right: 0;
+}
+
+.removePaddL {
+  padding-left: 0;
+}
+
+.sectionSeven {
+  padding-bottom: 6rem;
+}
+
+@media (max-width: 1199px) {
+  .removePaddR {
+    padding-right: 15px;
+  }
+
+  .removePaddL {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .rP {
+    padding-left: unset;
+    padding-right: unset;
+  }
+}
+
+/* Section 8 CSS */
+
+.formData.posRel {
+  position: relative;
+  overflow: hidden;
+  height: 85rem;
+}
+
+.imageBForm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.imageBForm img {
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.centerForm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.centerForm p:first-child {
+  padding-top: 10rem;
+  color: #f6067d;
+  font-weight: 500;
+}
+
+.centerForm .p {
+  color: white;
+  font-weight: 500;
+  max-width: 68rem;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+.centerForm h2 {
+  padding: 3rem 0;
+  color: white;
+}
+
+.wrap-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 114rem;
+  margin: 0 auto;
+  font-size: 1.7rem;
+}
+
+.wrap-form input {
+  padding: 1.6rem;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+.firstInput {
+  width: 46%;
+  position: relative;
+  margin: 1rem;
+}
+
+.firstInput span {
+  position: absolute;
+  top: 80%;
+  left: auto;
+  right: 0;
+  padding: 6px;
+  border-radius: 5px;
+  background-color: #f5cb5c;
+  color: #000000;
+  text-align: start;
+  font-size: 1.6rem;
+  z-index: 11;
+}
+
+.secondInput {
+  width: 46%;
+  position: relative;
+  margin: 1rem;
+}
+
+.secondInput span {
+  position: absolute;
+  top: 80%;
+  left: auto;
+  right: 0;
+  padding: 6px;
+  border-radius: 5px;
+  background-color: #f5cb5c;
+  color: #000000;
+  text-align: start;
+  font-size: 1.6rem;
+  z-index: 11;
+}
+
+.thirdInput {
+  width: 46%;
+  position: relative;
+  margin: 1rem;
+}
+
+.thirdInput span {
+  position: absolute;
+  top: 80%;
+  left: auto;
+  right: 0;
+  padding: 6px;
+  border-radius: 5px;
+  background-color: #f5cb5c;
+  color: #000000;
+  text-align: start;
+  font-size: 1.6rem;
+  z-index: 11;
+}
+
+.fourthInput {
+  width: 46%;
+  position: relative;
+  margin: 1rem;
+}
+
+.fourthInput span {
+  position: absolute;
+  top: 80%;
+  left: auto;
+  right: 0;
+  padding: 6px;
+  border-radius: 5px;
+  background-color: #f5cb5c;
+  color: #000000;
+  text-align: start;
+  font-size: 1.6rem;
+  z-index: 11;
+}
+
+.allInputs {
+  width: 100%;
+}
+
+.briefs {
+  width: calc(92% + 2rem);
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.briefs span {
+  position: absolute;
+  top: 80%;
+  left: auto;
+  right: 0;
+  padding: 6px;
+  border-radius: 5px;
+  background-color: #f5cb5c;
+  color: #000000;
+  text-align: start;
+  font-size: 1.6rem;
+  z-index: 11;
+}
+
+textarea {
+  width: 100%;
+  padding-left: 1.6rem;
+  padding-bottom: 5rem;
+  padding-top: 8px;
+  border-radius: 5px;
+  resize: none;
+}
+
+.sectionEight .submit {
+  color: white;
+  padding: 1.8rem 3.6rem;
+  border-radius: 3rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #f6067d;
+  background-color: #f6067d;
+  transition: all 0.3s;
+}
+
+.sectionEight .submit:hover {
+  border: 1px solid black;
+  background-color: black;
+}
+
+@media (max-width: 767px) {
+  .firstInput {
+    width: 100%;
+  }
+  .secondInput {
+    width: 100%;
+  }
+
+  .thirdInput {
+    width: 100%;
+  }
+
+  .fourthInput {
+    width: 100%;
+  }
+
+  .briefs {
+    width: calc(100% - 2rem);
+  }
+  .formData.posRel {
+    height: 95rem;
+  }
+}
+
+/* FOOTER CSS */
+
+.footer {
+  padding-top: 6rem;
+  background-color: #13121a;
+  overflow: hidden;
+}
+
+.borders {
+  padding: 0 0 0 1rem;
+  border-style: solid;
+  border-width: 0 0 0 3px;
+  border-color: rgb(88, 87, 87);
+  margin-bottom: 2rem;
+}
+
+.borders span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.2rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: white;
+}
+
+.fa-angle-right {
+  color: #f6067d;
+  padding-right: 1rem;
+  font-size: 1.7rem;
+}
+
+.services ul li {
+  font-size: 1.8rem;
+  color: white;
+  padding-bottom: 1.2rem;
+}
+
+.serv2 ul {
+  display: flex;
+}
+
+.serv2 ul li {
+  padding-right: 8px;
+  font-size: 3rem;
+}
+
+.footer p {
+  text-align: center;
+  color: white;
+  padding-bottom: 3rem;
+}
+
+.services {
+  padding-bottom: 3rem;
+}
+
+/**/

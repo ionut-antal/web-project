@@ -1,0 +1,86 @@
+/* start Contact CSS */
+
+.topImageReset img {
+  opacity: 0.2;
+}
+
+.centerReset p {
+  max-width: 110rem;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  letter-spacing: unset;
+}
+
+.contactForm {
+  background-color: #272f3d;
+  max-width: 100rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  padding-bottom: 6rem;
+  font-size: 1.6rem;
+}
+
+.contactForm h2 {
+  font-size: 3.5rem;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.contactForm input {
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+.resetFirstInput {
+  width: calc(100% - 10rem);
+  margin: 2rem 5rem;
+}
+
+.resetSecondInput {
+  width: calc(100% - 10rem);
+  margin: 2rem 5rem;
+}
+
+.resetThirdInput {
+  width: calc(100% - 10rem);
+  margin: 2rem 5rem;
+}
+
+.resetBriefs {
+  width: calc(100% - 10rem);
+  margin: 2rem 5rem 3rem;
+}
+
+.resetBriefs textarea {
+  padding-left: 1rem;
+}
+
+.selectBudget {
+  color: white;
+  text-align: start;
+  width: calc(100% - 10rem);
+  margin: 2rem 5rem;
+}
+
+.allRadioInputs {
+  margin-right: 1.2rem;
+}
+
+#errOption {
+  padding: 6px;
+  border-radius: 5px;
+  background-color: #f5cb5c;
+  color: #000000;
+  text-align: start;
+  font-size: 1.6rem;
+}
+
+.sectionEight .resetSubmit {
+  border-radius: unset;
+}
+
+/**/

@@ -1,0 +1,47 @@
+/* start enquiry */
+
+.bgColor {
+  position: relative;
+  height: 30rem;
+}
+
+.center-text {
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.center-text p {
+  padding-top: 2rem;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.alignContent {
+  text-align: center;
+  padding-bottom: 6rem;
+}
+
+.alignContent h4 {
+  font-size: 2.9rem;
+  line-height: 3.6rem;
+}
+
+.alignContent p {
+  padding-top: 2rem;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+}
+
+/**/

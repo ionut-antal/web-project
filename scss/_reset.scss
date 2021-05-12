@@ -1,0 +1,84 @@
+/* start RESET */
+html {
+  font-size: 10px;
+  @media (max-width: 991px) {
+    font-size: 8px;
+  }
+  @media (max-width: 767px) {
+    font-size: 6px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  color: unset;
+}
+input,
+input:focus,
+textarea,
+textarea:focus,
+select,
+select:focus {
+  box-shadow: unset;
+  outline: unset;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  padding-top: 55px;
+  overflow-x: hidden;
+}
+h1 {
+  font-size: 6rem;
+  line-height: 6rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 700;
+}
+h3 {
+  font-family: "Audiowide", cursive;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  font-weight: 400;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+
+@media (max-width: 991px) {
+  .setContainer {
+    max-width: 100%;
+  }
+}
+/**/
